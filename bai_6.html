@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+nhập số <input type="text" id="asd" onkeypress="keycode(evt)"><br>
+<p id="abc"></p>
+<script>
+    function keycode(evt) {
+        if (evt.keycode >= 48 && evt.keycode <= 57) {
+            document.getElementById("abc").innerHTML = "Nhập đúng"
+        } else {
+            document.getElementById("abc").innerHTML = "Nhập sai"
+        }
+    }
+    document.addEventListener('keypress', keycode);
+</script>
+
+<body>
+
+</body>
+
+</html>
